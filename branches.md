@@ -9,7 +9,7 @@ git branch -d some-branch-name
 
 ### remote
 
-Deleting a branch from your **remote** (e.g. origin) repository, there are two ways, shown here, which are functionally equivalent (use whichever is easier to remember)
+Deleting a branch from your **remote** (e.g. origin) repository, there are two ways, shown here, which are functionally equivalent (use whichever is easier to remember). These follow the same format as tag deletion commands.
 
 ```bash
 git push origin --delete some-branch-name
