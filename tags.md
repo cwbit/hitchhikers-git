@@ -1,3 +1,35 @@
+## Renaming a Tag
+The following will rename a tag from `old` to `new`.
+
+First, create a new tag that refs the old tag
+
+```
+git tag new old
+```
+
+Then, delete the old tag (locally and remotely)
+
+```
+git tag -d old
+git push origin :refs/tag/old
+```
+
+Finally, push your new tag changes to the remote server
+
+```
+git push --tags
+```
+
+Put all together, the solution is as follows
+
+```
+git tag new old
+git tag -d old
+git push origin :refs/tags/old
+git push --tags
+```
+
+
 ## Deleting a Tag (local and remote)
 
 ### local
