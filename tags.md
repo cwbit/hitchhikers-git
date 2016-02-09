@@ -58,10 +58,11 @@ git push origin :<tag>
 To move a tag to a different commit, ie. when you forgot to put your deplyment script in the tagged commit...
 
 ```bash
-git tag -a "4.0.1" abcdefghi -f
+git tag -a "4.4.2" 02e0ff7 -f
+# Updated tag '4.4.2' (was 3adddeb)
 ```
 
-where `"4.0.1"` is whatever your actual tag is, and `abcdefghi` is the commit number you want to move it to.
+where `"4.4.2"` is whatever your actual tag is, and `02e0ff7 ` is the commit number you want to move it to.
 
 The `-f` flag will force the change to go thru since technically we're telling git to `add` a tag that already exists. The plus-side of this is that git will (should) automatically re-use the original commit message from the first tag.
 
