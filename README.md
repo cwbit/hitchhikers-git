@@ -8,3 +8,8 @@ I highly recommend the **Gitflow Workflow** strategy for source control, as docu
 
 ***WHY?***
 It's extremly easy to follow, makes sense (important!), and is designed to handle working in either a solo or team-based development environment
+
+## TOC
+
+* [Working with `branch`es](/branches.md)
+* [Working with `tag`s](/tags.md)
